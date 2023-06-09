@@ -6,7 +6,10 @@ This repository holds various technical information about reverse engineering Sa
 
 # Related Resources
 
-
+* [Python Loader for TMP91 Series](https://github.com/colinoflynn/pytoshload)
+* [Resource CD for TLCS900](https://github.com/colinoflynn/Toshiba-TLCS-900-L-Resources)
+* [Slides for related talk](https://colinoflynn.com/2023/06/recon-2023-adventures-of-my-oven-pinocchio-with-chipwhisperer/)
+* Circuit Cellar article, May 2023 (mostly covers the DPA & glitching, not the later oven R.E. information)
 
 # Status 
 
@@ -51,4 +54,10 @@ I don't know the real connector, but I found that 2181021061 seemed to work. It 
 
 ## Reverse Engineering Technical Details 
 
+The reverse engineering used the Toshiba IDE to disassemble the binary. This outputs a reasonably nice text file.
+
+TODO - more details here
+
 # DE92-03960 (R5F100LEAFB - RL78/G13) Specific
+
+This device does not have firmware protection. The firwmare can be read out easily (I used a debugger with their IDE to dump this, as the command-line tool didn't have the option).
