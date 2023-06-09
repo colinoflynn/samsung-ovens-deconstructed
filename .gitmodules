@@ -1,0 +1,3 @@
+[submodule "python/pytoshload"]
+	path = python/pytoshload
+	url = https://github.com/colinoflynn/pytoshload
